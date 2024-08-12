@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+body, section, #clock {
+    position: relative;
+    z-index: 1;
+}
+
+/* Overall Styling */
+body {
+    background: linear-gradient(to right, #a1ffce, #faffd1); /* Soft green and yellow gradient */
+    font-family: 'Roboto', sans-serif;
+    color: #27ae60; /* Fresh green text color */
+}
+
+section {
+    margin: 50px 50px 20px;
+    background-color: rgba(46, 204, 113, 0.2); /* Soft green background */
+    border: 2px solid #27ae60; /* Fresh green border */
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+h1 {
+    font-size: 30px;
+    color: #2ecc71; /* Bright green */
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for text depth */
+}
+
+/* Table Styling */
+.table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding: 0;
+}
+
+.tbl-header {
+    background-color: #2ecc71; /* Bright green */
+}
+
+.tbl-content {
+    height: auto;
+    overflow-x: auto;
+    margin-top: 0;
+    border: 1px solid rgba(46, 204, 113, 0.5);
+    background-color: #a1ffce; /* Soft green background */
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFF; /* White text */
+    background-color: #27ae60; /* Fresh green */
+}
+
+td {
+    vertical-align: middle;
+    font-weight: 500;
+    border-bottom: solid 1px rgba(46, 204, 113, 0.5);
+    background-color: #d4efdf; /* Very light green background */
+    color: #2C3E50; /* Deep green-blue text */
+}
+
+/* Clock Styling */
+#clock {
+    margin-bottom: 2.5rem;
+    font-family: 'Share Tech Mono', monospace;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(46, 204, 113, 0.5), 0 0 20px rgba(39, 174, 96, 0.5); /* Fresh green glow */
+    color: #27ae60; /* Fresh green */
+}
+
+.time {
+    letter-spacing: 0.4em;
+    font-size: 7em;
+    padding: 5px 0;
+    margin: auto;
+    font-weight: 900;
+    color: #27ae60; /* Fresh green */
+}
+
+.date {
+    letter-spacing: 0.4em;
+    font-size: 3em;
+    font-weight: 700;
+    color: #2ecc71; /* Bright green */
+}
+
+/* Custom Scrollbar for WebKit Browsers */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #27ae60; /* Fresh green scrollbar */
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+/* FALLING FLOWER */
+
+.falling-leaf {
+    position: fixed; /* Ensure it’s positioned relative to the viewport */
+    top: 0;
+    width: 80px; /* Smaller size for flower */
+    height: auto;
+    animation: fall 4s linear forwards;
+    pointer-events: none; /* Make sure the flower doesn't interfere with user interactions */
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}

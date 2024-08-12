@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- The Basics -->
+	<meta charset="UTF-8">
+	<meta name="description" content="Your website description here." />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<title>Website Title</title>
+    <link rel="icon" type="image/png" href="https://www.example.com/images/icons/favicon.ico">     
+	<meta property="og:title" content="Website Title" />
+	<meta property="og:description" content="Your website description here." />
+	<meta property="og:url" content="https://www.example.com/" />
+	<meta property="og:site_name" content="Website Title" />	
+    <link rel="canonical" href="https://www.example.com/">
+	
+	<!-- Facebook opengraph markup -->
+	<meta property="og:title" content="Website Title">
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.example.com/"/>
+	<meta property="og:image" content="https://www.example.com/images/opengraph.jpg">
+	<meta property="og:description" content="Your website description here.">
+	<meta property="og:img:alt" content="Your website description here.">
+
+	<!-- Twitter card markup -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Website Title">
+	<meta name="twitter:description" content="Your website description here.">
+	<meta name="twitter:image" content="https://www.example.com/images/opengraph.jpg">
+
+	<!-- Mobile URL bar color -->
+	<meta name="theme-color" content="#277ecf">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicons -->
+    <!-- Use this website to generate the files referenced in this next block. -->
+    <!-- https://realfavicongenerator.net/ -->
+    <!-- Make sure it's unzipped in the '<webroot>/images/icons' folder. -->
+    <!-- Or just ensure you update the locations / URL's below to match your setup. -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.example.com/images/icons/apple-touch-icon.png">   
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.example.com/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.example.com/images/icons/favicon-16x16.png">
+    <link rel="manifest" href="https://www.example.com/images/icons/site.webmanifest">
+    <link rel="mask-icon" href="https://www.example.com/images/icons/safari-pinned-tab.svg" color="#000">
+    <link rel="shortcut icon" href="https://www.example.com/images/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#000">
+    <meta name="msapplication-config" content="https://www.example.com/images/icons/browserconfig.xml">    
+
+    <!-- JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/vue.min.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/reload.js"></script>
+    <!-- Automatic Season CSS / JS Loader --> 
+    <script src="js/seasons.js"></script>
+
+    <!-- Individual Season Testing -->
+    <!-- Comment out <script src="js/seasons.js"></script> above -->
+    <!-- and uncomment the applicable css and js you want to test-->
+
+        <!-- WINTER 
+        <script src="js/winter.js"></script>
+        <link rel="stylesheet" href="css/winter.css">
+        -->
+
+        <!-- SUMMER 
+        <script src="js/summer.js"></script>
+        <link rel="stylesheet" href="css/summer.css">
+        -->
+
+        <!-- SPRING 
+        <script src="js/spring.js"></script>
+        <link rel="stylesheet" href="css/spring.css">
+        -->
+        
+        <!-- FALL 
+        <script src="js/fall.js"></script>
+        <link rel="stylesheet" href="css/fall.css">
+        -->        
+
+</head>
+
+<body>
+
+    <div id="falling-leaf-container"></div>
+
+    <div id="clock">
+        <p class="date">{{ date }}</p>
+        <p class="time">{{ time }}</p>
+    </div>
+
+<section>
+    <div class="tbl-header">
+
+    <!-- TOP ROW -->
+
+    <table class="table">
+        <thead>
+        <tr id="header-row">
+            <th id="header-row-1-column-1" class="header-cell"><b>Column 1</b></th>
+            <th id="header-row-1-column-2" class="header-cell"><b>Column 2</b></th>
+            <th id="header-row-1-column-3" class="header-cell"><b>Column 3</b></th>
+            <th id="header-row-1-column-4" class="header-cell"><b>Column 4</b></th>
+            <th id="header-row-1-column-5" class="header-cell"><b>Column 5</b></th>
+            <!-- <th id="header-row-1-column-6" class="header-cell"><b>Column 6</b></th> -->
+            <!-- <th id="header-row-1-column-7" class="header-cell"><b>Column 7</b></th> -->
+            <!-- <th id="header-row-1-column-8" class="header-cell"><b>Column 8</b></th> -->
+            <!-- <th id="header-row-1-column-9" class="header-cell"><b>Column 9</b></th> -->
+            <!-- <th id="header-row-1-column-10" class="header-cell"><b>Column 10</b></th> -->
+        </tr>
+        </thead>
+    </table>
+    </div>
+
+    <!-- REST OF TABLE -->
+
+    <div id="main-table" class="tbl-content">
+        <table class="table">
+            <tbody>
+                <tr id="row-1" class="row"> <!-- ROW 1 -->
+                    <td id="row-1-column-1" class="table-cell">Item 1</td> <!-- Column 1 -->
+                    <td id="row-1-column-2" class="table-cell">Item 2</td> <!-- Column 2 -->
+                    <td id="row-1-column-3" class="table-cell">Item 3</td> <!-- Column 3 -->
+                    <td id="row-1-column-4" class="table-cell">Item 4</td> <!-- Column 4 -->
+                    <td id="row-1-column-5" class="table-cell">Item 5</td> <!-- Column 5 -->
+                    <!-- <td id="row-1-column-6" class="table-cell">Item 6</td> --> <!-- Column 6 -->
+                    <!-- <td id="row-1-column-7" class="table-cell">Item 7</td> --> <!-- Column 7 -->
+                    <!-- <td id="row-1-column-8" class="table-cell">Item 8</td> --> <!-- Column 8 -->
+                    <!-- <td id="row-1-column-9" class="table-cell">Item 9</td> --> <!-- Column 9 -->
+                    <!-- <td id="row-1-column-10" class="table-cell">Item 10</td> --> <!-- Column 10 -->
+                </tr>
+                <tr id="row-2" class="row"> <!-- ROW 2 -->
+                    <td id="row-2-column-1" class="table-cell">Item 1</td> <!-- Column 1 -->
+                    <td id="row-2-column-2" class="table-cell">Item 2</td> <!-- Column 2 -->
+                    <td id="row-2-column-3" class="table-cell">Item 3</td> <!-- Column 3 -->
+                    <td id="row-2-column-4" class="table-cell">Item 4</td> <!-- Column 4 -->
+                    <td id="row-2-column-5" class="table-cell">Item 5</td> <!-- Column 5 -->
+                    <!-- <td id="row-2-column-6" class="table-cell">Item 6</td> --> <!-- Column 5 -->
+                    <!-- <td id="row-2-column-7" class="table-cell">Item 7</td> --> <!-- Column 5 -->
+                    <!-- <td id="row-2-column-8" class="table-cell">Item 8</td> --> <!-- Column 5 -->
+                    <!-- <td id="row-2-column-9" class="table-cell">Item 9</td> --> <!-- Column 5 -->
+                    <!-- <td id="row-2-column-10" class="table-cell">Item 10</td> --> <!-- Column 5 -->
+                </tr>
+                <tr id="row-3" class="row"> <!-- ROW 3 -->
+                    <td id="row-3-column-1" class="table-cell">Item 1</td> <!-- Column 1 -->
+                    <td id="row-3-column-2" class="table-cell">Item 2</td> <!-- Column 2 -->
+                    <td id="row-3-column-3" class="table-cell">Item 3</td> <!-- Column 3 -->
+                    <td id="row-3-column-4" class="table-cell">Item 4</td> <!-- Column 4 -->
+                    <td id="row-3-column-5" class="table-cell">Item 5</td> <!-- Column 5 -->
+                    <!-- <td id="row-3-column-6" class="table-cell">Item 6</td> --> <!-- Column 6 -->
+                    <!-- <td id="row-3-column-7" class="table-cell">Item 7</td> --> <!-- Column 7 -->
+                    <!-- <td id="row-3-column-8" class="table-cell">Item 8</td> --> <!-- Column 8 -->
+                    <!-- <td id="row-3-column-9" class="table-cell">Item 9</td> --> <!-- Column 9 -->
+                    <!-- <td id="row-3-column-10" class="table-cell">Item 10</td> --> <!-- Column 10 -->
+                </tr>
+                <tr id="row-4" class="row"> <!-- ROW 4 -->
+                    <td id="row-4-column-1" class="table-cell">Item 1</td> <!-- Column 1 -->
+                    <td id="row-4-column-2" class="table-cell">Item 2</td> <!-- Column 2 -->
+                    <td id="row-4-column-3" class="table-cell">Item 3</td> <!-- Column 3 -->
+                    <td id="row-4-column-4" class="table-cell">Item 4</td> <!-- Column 4 -->
+                    <td id="row-4-column-5" class="table-cell">Item 5</td> <!-- Column 5 -->
+                    <!-- <td id="row-4-column-6" class="table-cell">Item 6</td> --> <!-- Column 5 -->
+                    <!-- <td id="row-4-column-7" class="table-cell">Item 7</td> --> <!-- Column 5 -->
+                    <!-- <td id="row-4-column-8" class="table-cell">Item 8</td> --> <!-- Column 5 -->
+                    <!-- <td id="row-4-column-9" class="table-cell">Item 9</td> --> <!-- Column 5 -->
+                    <!-- <td id="row-4-column-10" class="table-cell">Item 10</td> --> <!-- Column 5 -->
+                </tr>
+                <tr id="row-5" class="row"> <!-- ROW 5 -->
+                    <td id="row-5-column-1" class="table-cell">Item 1</td> <!-- Column 1 -->
+                    <td id="row-5-column-2" class="table-cell">Item 2</td> <!-- Column 2 -->
+                    <td id="row-5-column-3" class="table-cell">Item 3</td> <!-- Column 3 -->
+                    <td id="row-5-column-4" class="table-cell">Item 4</td> <!-- Column 4 -->
+                    <td id="row-5-column-5" class="table-cell">Item 5</td> <!-- Column 5 -->
+                    <!-- <td id="row-5-column-6" class="table-cell">Item 6</td> --> <!-- Column 6 -->
+                    <!-- <td id="row-5-column-7" class="table-cell">Item 7</td> --> <!-- Column 7 -->
+                    <!-- <td id="row-5-column-8" class="table-cell">Item 8</td> --> <!-- Column 8 -->
+                    <!-- <td id="row-5-column-9" class="table-cell">Item 9</td> --> <!-- Column 9 -->
+                    <!-- <td id="row-5-column-10" class="table-cell">Item 10</td> --> <!-- Column 10 -->
+                </tr>
+                <tr id="row-6" class="row"> <!-- ROW 6 -->
+                    <td id="row-6-column-1" class="table-cell">Item 1</td> <!-- Column 1 -->
+                    <td id="row-6-column-2" class="table-cell">Item 2</td> <!-- Column 2 -->
+                    <td id="row-6-column-3" class="table-cell">Item 3</td> <!-- Column 3 -->
+                    <td id="row-6-column-4" class="table-cell">Item 4</td> <!-- Column 4 -->
+                    <td id="row-6-column-5" class="table-cell">Item 5</td> <!-- Column 5 -->
+                    <!-- <td id="row-6-column-6" class="table-cell">Item 6</td> --> <!-- Column 6 -->
+                    <!-- <td id="row-6-column-7" class="table-cell">Item 7</td> --> <!-- Column 7 -->
+                    <!-- <td id="row-6-column-8" class="table-cell">Item 8</td> --> <!-- Column 8 -->
+                    <!-- <td id="row-6-column-9" class="table-cell">Item 9</td> --> <!-- Column 9 -->
+                    <!-- <td id="row-6-column-10" class="table-cell">Item 10</td> --> <!-- Column 10 -->
+                </tr>
+
+<!-------------------------------------------------------------->  
+<!---------------- ADD MORE ROWS HERE IF NEEDED ---------------->
+<!-------------------------------------------------------------->
+
+                <!-- <tr id="row-7" class="row">--> <!-- ROW 7 -->
+                    <!-- <td id="row-7-column-1" class="table-cell"></td> --> <!-- Column 1 -->
+                    <!-- <td id="row-7-column-2" class="table-cell"></td> --> <!-- Column 2 -->
+                    <!-- <td id="row-7-column-3" class="table-cell"></td> --> <!-- Column 3 -->
+                    <!-- <td id="row-7-column-4" class="table-cell"></td> --> <!-- Column 4 -->
+                    <!-- <td id="row-7-column-5" class="table-cell"></td> --> <!-- Column 5 -->
+                    <!-- <td id="row-7-column-6" class="table-cell"></td> --> <!-- Column 5 -->
+                    <!-- <td id="row-7-column-7" class="table-cell"></td> --> <!-- Column 5 -->
+                    <!-- <td id="row-7-column-8" class="table-cell"></td> --> <!-- Column 5 -->
+                    <!-- <td id="row-7-column-9" class="table-cell"></td> --> <!-- Column 5 -->
+                    <!-- <td id="row-7-column-10" class="table-cell"></td> --> <!-- Column 5 -->
+                <!-- </tr>-->
+                <!-- <tr id="row-8" class="row">--> <!-- ROW 8 -->
+                    <!-- <td id="row-8-column-1" class="table-cell"></td> --> <!-- Column 1 -->
+                    <!-- <td id="row-8-column-2" class="table-cell"></td> --> <!-- Column 2 -->
+                    <!-- <td id="row-8-column-3" class="table-cell"></td> --> <!-- Column 3 -->
+                    <!-- <td id="row-8-column-4" class="table-cell"></td> --> <!-- Column 4 -->
+                    <!-- <td id="row-8-column-5" class="table-cell"></td> --> <!-- Column 5 -->
+                    <!-- <td id="row-8-column-6" class="table-cell"></td> --> <!-- Column 5 -->
+                    <!-- <td id="row-8-column-7" class="table-cell"></td> --> <!-- Column 5 -->
+                    <!-- <td id="row-8-column-8" class="table-cell"></td> --> <!-- Column 5 -->
+                    <!-- <td id="row-8-column-9" class="table-cell"></td> --> <!-- Column 5 -->
+                    <!-- <td id="row-8-column-10" class="table-cell"></td> --> <!-- Column 5 -->
+                <!-- </tr>-->
+                <!-- <tr id="row-9" class="row">--> <!-- ROW 9 -->
+                    <!-- <td id="row-9-column-1" class="table-cell"></td> --> <!-- Column 1 -->
+                    <!-- <td id="row-9-column-2" class="table-cell"></td> --> <!-- Column 2 -->
+                    <!-- <td id="row-9-column-3" class="table-cell"></td> --> <!-- Column 3 -->
+                    <!-- <td id="row-9-column-4" class="table-cell"></td> --> <!-- Column 4 -->
+                    <!-- <td id="row-9-column-5" class="table-cell"></td> --> <!-- Column 5 -->
+                    <!-- <td id="row-9-column-6" class="table-cell"></td> --> <!-- Column 5 -->
+                    <!-- <td id="row-9-column-7" class="table-cell"></td> --> <!-- Column 5 -->
+                    <!-- <td id="row-9-column-8" class="table-cell"></td> --> <!-- Column 5 -->
+                    <!-- <td id="row-9-column-9" class="table-cell"></td> --> <!-- Column 5 -->
+                    <!-- <td id="row-9-column-10" class="table-cell"></td> --> <!-- Column 5 -->
+                <!-- </tr>-->
+                <!-- <tr id="row-10" class="row">--> <!-- ROW 10 -->
+                    <!-- <td id="row-10-column-1" class="table-cell"></td> --> <!-- Column 1 -->
+                    <!-- <td id="row-10-column-2" class="table-cell"></td> --> <!-- Column 2 -->
+                    <!-- <td id="row-10-column-3" class="table-cell"></td> --> <!-- Column 3 -->
+                    <!-- <td id="row-10-column-4" class="table-cell"></td> --> <!-- Column 4 -->
+                    <!-- <td id="row-10-column-5" class="table-cell"></td> --> <!-- Column 5 -->
+                    <!-- <td id="row-10-column-6" class="table-cell"></td> --> <!-- Column 5 -->
+                    <!-- <td id="row-10-column-7" class="table-cell"></td> --> <!-- Column 5 -->
+                    <!-- <td id="row-10-column-8" class="table-cell"></td> --> <!-- Column 5 -->
+                    <!-- <td id="row-10-column-9" class="table-cell"></td> --> <!-- Column 5 -->
+                    <!-- <td id="row-10-column-10" class="table-cell"></td> --> <!-- Column 5 -->
+                <!-- </tr>-->
+                <!-- <tr id="row-11" class="row">--> <!-- ROW 11 -->
+                    <!-- <td id="row-11-column-1" class="table-cell"></td> --> <!-- Column 1 -->
+                    <!-- <td id="row-11-column-2" class="table-cell"></td> --> <!-- Column 2 -->
+                    <!-- <td id="row-11-column-3" class="table-cell"></td> --> <!-- Column 3 -->
+                    <!-- <td id="row-11-column-4" class="table-cell"></td> --> <!-- Column 4 -->
+                    <!-- <td id="row-11-column-5" class="table-cell"></td> --> <!-- Column 5 -->
+                    <!-- <td id="row-11-column-6" class="table-cell"></td> --> <!-- Column 5 -->
+                    <!-- <td id="row-11-column-7" class="table-cell"></td> --> <!-- Column 5 -->
+                    <!-- <td id="row-11-column-8" class="table-cell"></td> --> <!-- Column 5 -->
+                    <!-- <td id="row-11-column-9" class="table-cell"></td> --> <!-- Column 5 -->
+                    <!-- <td id="row-11-column-10" class="table-cell"></td> --> <!-- Column 5 -->
+                <!-- </tr>-->
+                <!-- <tr id="row-12" class="row">--> <!-- ROW 12 -->
+                    <!-- <td id="row-12-column-1" class="table-cell"></td> --> <!-- Column 1 -->
+                    <!-- <td id="row-12-column-2" class="table-cell"></td> --> <!-- Column 2 -->
+                    <!-- <td id="row-12-column-3" class="table-cell"></td> --> <!-- Column 3 -->
+                    <!-- <td id="row-12-column-4" class="table-cell"></td> --> <!-- Column 4 -->
+                    <!-- <td id="row-12-column-5" class="table-cell"></td> --> <!-- Column 5 -->
+                    <!-- <td id="row-12-column-6" class="table-cell"></td> --> <!-- Column 5 -->
+                    <!-- <td id="row-12-column-7" class="table-cell"></td> --> <!-- Column 5 -->
+                    <!-- <td id="row-12-column-8" class="table-cell"></td> --> <!-- Column 5 -->
+                    <!-- <td id="row-12-column-9" class="table-cell"></td> --> <!-- Column 5 -->
+                    <!-- <td id="row-12-column-10" class="table-cell"></td> --> <!-- Column 5 -->
+                <!-- </tr> -->
+                              
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<script>
+        
+    var clock = new Vue({
+        el: '#clock',
+        data: {
+            time: '',
+            date: ''
+        }
+    });
+    
+    var week = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
+    var timerID = setInterval(updateTime, 1000);
+    updateTime();
+    function updateTime() {
+        var cd = new Date();
+        clock.time = zeroPadding(cd.getHours(), 2) + ':' + zeroPadding(cd.getMinutes(), 2) + ':' + zeroPadding(cd.getSeconds(), 2);
+        clock.date = zeroPadding(cd.getFullYear(), 4) + '-' + zeroPadding(cd.getMonth()+1, 2) + '-' + zeroPadding(cd.getDate(), 2) + ' ' + week[cd.getDay()];
+    };
+    
+    function zeroPadding(num, digit) {
+        var zero = '';
+        for(var i = 0; i < digit; i++) {
+            zero += '0';
+        }
+        return (zero + num).slice(-digit);
+    }
+
+</script>
+
+</body>
+</html>
