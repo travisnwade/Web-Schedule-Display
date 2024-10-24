@@ -17,9 +17,13 @@ A fun project designed to dynamically display a daily schedule on a monitor or T
 
 - **Seasonal Themes**: Automatically changes the background and styling based on the current season (Spring, Summer, Fall, Winter).
 - **Dynamic Content**: Updates the schedule and time in real-time using JavaScript and Vue.js.
-- **Responsive Design**: Optimized for different screen sizes, making it suitable for various displays.
 
 ## Getting Started
+
+If you wanted to deploy to Netlify, this button below will clone this repo exactly as you see it, and deploy the app in your Netlify environment.
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/travisnwade/web-schedule-display)
+
 
 ### Prerequisites
 
