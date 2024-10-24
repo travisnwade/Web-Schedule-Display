@@ -1,6 +1,6 @@
 # Web Schedule Display
 
-A fun project designed to dynamically display a daily schedule on a monitor or TV. The schedule changes themes according to the season, providing a year-round display that is visually appealing and informative.
+A fun project designed to dynamically display a daily schedule on a monitor or TV. The schedule changes themes according to the season, providing a year-round display that is visually appealing and informative.  Can use this for events, at home for you and your family, or whever really.
 
 ## Table of Contents
 - [Features](#features)
@@ -15,8 +15,9 @@ A fun project designed to dynamically display a daily schedule on a monitor or T
 
 ## Features
 
-- **Seasonal Themes**: Automatically changes the background and styling based on the current season (Spring, Summer, Fall, Winter).
+- **Seasonal Themes**: Automatically changes the background and styling based on the current season (Spring, Summer, Fall, Winter).  You can also set this statically or make your own theme.
 - **Dynamic Content**: Updates the schedule and time in real-time using JavaScript and Vue.js.
+- **Auto Reload**: The page automatically reloads every four hours.  You can adjust this as needed.
 
 ## Getting Started
 
@@ -48,9 +49,9 @@ If you wanted to deploy to Netlify, this button below will clone this repo exact
 
 ## Tools and Resources
 
-- **Favicon Generator**: [Real Favicon Generator](https://realfavicongenerator.net/)
-- **Images and Video Content**: [Pixabay](https://pixabay.com/)
-- **Web Hosting**: [Netlify](https://www.netlify.com/)
+- **Favicon Generator**: [Real Favicon Generator](https://realfavicongenerator.net/), I use this to generate the favicons and app files.  It's just easy and simple.  You can make your own as well and unzip those contents into the `images/icons` folder.
+- **Images and Video Content**: [Pixabay](https://pixabay.com/), those credits go directly to their orignal author.
+- **Web Hosting**: [Netlify](https://www.netlify.com/), it's just badass ok? 
 
 ## Demo
 
